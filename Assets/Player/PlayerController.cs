@@ -8,6 +8,7 @@ namespace jCaballol94.SphereScene
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private PlayerStats m_stats;
+        [SerializeField] private float m_warpDistance;
         private Rigidbody m_rigidbody;
 
         private void Start()
@@ -17,6 +18,8 @@ namespace jCaballol94.SphereScene
 
         private void Update()
         {
+            Wrap();
+
             var horizontal = Input.GetAxis("Horizontal");
             var vertical = Input.GetAxis("Vertical");
 
@@ -34,6 +37,25 @@ namespace jCaballol94.SphereScene
 
                 m_rigidbody.MoveRotation(Quaternion.LookRotation(newForward));
             }
+        }
+
+        private void Wrap()
+        {
+            var position = transform.position;
+
+            if (position.x > m_warpDistance)
+                position.x -= m_warpDistance * 2f;
+
+            if (position.x < -m_warpDistance)
+                position.x += m_warpDistance * 2f;
+
+            if (position.z > m_warpDistance)
+                position.z -= m_warpDistance * 2f;
+
+            if (position.z < -m_warpDistance)
+                position.z += m_warpDistance * 2f;
+
+            transform.position = position;
         }
     }
 }

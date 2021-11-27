@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_stats: {fileID: 11400000, guid: 68bca51d2c5372b498799ef28e128f9c, type: 2}
+  m_warpDistance: 10
 --- !u!1 &8789436199373010550
 GameObject:
   m_ObjectHideFlags: 0
