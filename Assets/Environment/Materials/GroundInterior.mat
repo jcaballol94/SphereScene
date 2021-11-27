@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GroundInterior
-  m_Shader: {fileID: -6465566751694194690, guid: 9c5cecdd04769e54ca29e8f8ebc04531, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: c2b693cf0fcf38848ac9a04cdbe1b100, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -118,7 +118,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.86300004, g: 0.7902169, b: 0.7174338, a: 1}
+    - _BaseColor: {r: 0.432, g: 0.36663958, b: 0.297648, a: 1}
     - _Color: {r: 0.6509434, g: 0.5978054, b: 0.53963214, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _InsideColor: {r: 0.84199995, g: 0.7709879, b: 0.6999759, a: 1}
