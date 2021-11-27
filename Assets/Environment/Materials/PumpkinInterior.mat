@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tree
-  m_Shader: {fileID: -6465566751694194690, guid: 79ad0626c46a64e438b5bb96b5012738, type: 3}
+  m_Name: PumpkinInterior
+  m_Shader: {fileID: -6465566751694194690, guid: 9c5cecdd04769e54ca29e8f8ebc04531, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -110,7 +110,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.12
+    - _Smoothness: 0.542
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -118,9 +118,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.333, g: 0.2956551, b: 0.27683133, a: 1}
-    - _Color: {r: 0.33299997, g: 0.29565504, b: 0.2768313, a: 1}
+    - _BaseColor: {r: 1, g: 0.8347295, b: 0.48299998, a: 1}
+    - _Color: {r: 1, g: 0.69325405, b: 0.044999994, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _InsideColor: {r: 1, g: 1, b: 1, a: 1}
+    - _InsideColor: {r: 1, g: 1, b: 1, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
