@@ -15,7 +15,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: Underground
-    Event: 400
+    Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -28,9 +28,9 @@ MonoBehaviour:
     depthCompareFunction: 4
     enableWrite: 0
     stencilSettings:
-      overrideStencilState: 0
-      stencilReference: 0
-      stencilCompareFunction: 8
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 6
       passOperation: 0
       failOperation: 0
       zFailOperation: 0
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: TerrainSurface
-    Event: 400
+    Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -67,9 +67,9 @@ MonoBehaviour:
     depthCompareFunction: 4
     enableWrite: 1
     stencilSettings:
-      overrideStencilState: 0
-      stencilReference: 0
-      stencilCompareFunction: 8
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 6
       passOperation: 0
       failOperation: 0
       zFailOperation: 0
@@ -93,10 +93,10 @@ MonoBehaviour:
   debugShaders:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
   m_RendererFeatures:
+  - {fileID: 3520172284268782085}
   - {fileID: -6290413068784235189}
   - {fileID: -4518307019692436214}
-  - {fileID: 3520172284268782085}
-  m_RendererFeatureMap: 4b0da458a4f6b3a80a151461b4bf4bc1052204b80a2ada30
+  m_RendererFeatureMap: 052204b80a2ada304b0da458a4f6b3a80a151461b4bf4bc1
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: ObjectsInside
-    Event: 400
+    Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
@@ -161,10 +161,10 @@ MonoBehaviour:
     depthCompareFunction: 4
     enableWrite: 1
     stencilSettings:
-      overrideStencilState: 0
-      stencilReference: 0
+      overrideStencilState: 1
+      stencilReference: 1
       stencilCompareFunction: 8
-      passOperation: 0
+      passOperation: 2
       failOperation: 0
       zFailOperation: 0
     cameraSettings:
