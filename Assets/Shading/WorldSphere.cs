@@ -14,7 +14,15 @@ namespace jCaballol94.SphereScene
         private void LateUpdate()
         {
             var sphere = new Vector4(transform.position.x, transform.position.y,
-                transform.position.z, Application.isPlaying ? m_radius : 100f);
+                transform.position.z, m_radius);
+
+            Shader.SetGlobalVector(WORLD_SPHERE, sphere);
+        }
+
+        private void OnDisable()
+        {
+            var sphere = new Vector4(transform.position.x, transform.position.y,
+                transform.position.z, 100f);
 
             Shader.SetGlobalVector(WORLD_SPHERE, sphere);
         }
