@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4354754041731276357}
   - component: {fileID: 8092405870707363349}
   m_Layer: 3
-  m_Name: Cube (7)
+  m_Name: Plank_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4534128141097105920}
   - component: {fileID: 4645540513373113763}
   m_Layer: 3
-  m_Name: Cube (6)
+  m_Name: Plank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2984157127573404729}
   - component: {fileID: 594057570159903250}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Plank_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 630755369114174181}
   - component: {fileID: 7439300387820533746}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Plank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 7884994140347310750}
   - component: {fileID: 2829986709780986737}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Pillar_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 855286222292636462}
   - component: {fileID: 6619793393624903351}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 3424388855452920735}
   - component: {fileID: 4642877118995280242}
   m_Layer: 3
-  m_Name: Cube (5)
+  m_Name: Pillar_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,6 +625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1985795702311606449}
+  - component: {fileID: 77013651134098026}
   m_Layer: 0
   m_Name: Fence
   m_TagString: Untagged
@@ -652,6 +653,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &77013651134098026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534955945010845062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7989306, y: 1.7672472, z: 0.2996803}
+  m_Center: {x: 0.030078411, y: 0.3836236, z: -0.032312937}
 --- !u!1 &8366488229462827179
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +678,7 @@ GameObject:
   - component: {fileID: 3493657059348792073}
   - component: {fileID: 4861001807873729689}
   m_Layer: 3
-  m_Name: Cube (4)
+  m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
