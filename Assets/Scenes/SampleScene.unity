@@ -3547,7 +3547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2096235605599444535, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4818361899208000199, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
       propertyPath: m_cameraRoot
