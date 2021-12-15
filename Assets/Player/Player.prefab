@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 1962212716914049211}
   - component: {fileID: 4905648248051878429}
   - component: {fileID: 6930938598066329608}
+  - component: {fileID: 6789522503882766891}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -224,7 +225,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.844977, b: 0.617, a: 1}
   m_Intensity: 0.93
-  m_Range: 35.3
+  m_Range: 3.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -235,7 +236,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.02
     m_NormalBias: 0.1
-    m_NearPlane: 0.1
+    m_NearPlane: 0.04
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -293,6 +294,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &6789522503882766891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561017246609986499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10100a67969ef2f43a94f5ed09623400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BigFrequency: 0.75
+  m_BigAmplitude: 0.25
+  m_SmallFrequency: 5
+  m_SmallAmplitude: 0.1
 --- !u!1 &8789436199373010550
 GameObject:
   m_ObjectHideFlags: 0
