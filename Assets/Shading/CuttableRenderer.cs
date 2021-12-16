@@ -76,7 +76,7 @@ namespace jCaballol94.SphereScene
             }
 
             filter.sharedMesh = mesh;
-            renderer.sharedMaterials = material;
+            renderer.sharedMaterials = materials;
             renderer.shadowCastingMode = shadows ? UnityEngine.Rendering.ShadowCastingMode.On : 
                 UnityEngine.Rendering.ShadowCastingMode.Off;
             renderer.receiveShadows = shadows;
