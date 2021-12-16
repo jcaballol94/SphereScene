@@ -9,12 +9,12 @@ namespace jCaballol94.SphereScene
     {
         [Header("Main")]
         [SerializeField] private Mesh m_mainMesh;
-        [SerializeField] private Material m_outsideMaterial;
-        [SerializeField] private Material m_insideMaterial;
+        [SerializeField] private Material[] m_outsideMaterial;
+        [SerializeField] private Material[] m_insideMaterial;
 
         [Header("Interior details")]
         [SerializeField] private Mesh m_interiorMesh;
-        [SerializeField] private Material m_interiorMaterial;
+        [SerializeField] private Material[] m_interiorMaterial;
         [SerializeField] private bool m_addInteriorInside;
 
         [HideInInspector][SerializeField] private GameObject m_outsideObject;
@@ -37,11 +37,11 @@ namespace jCaballol94.SphereScene
             if (m_interiorInsideObject) m_interiorInsideObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
         }
 
-        private GameObject CreateObject(GameObject current, Mesh mesh, Material material, 
+        private GameObject CreateObject(GameObject current, Mesh mesh, Material[] material, 
             int layer, bool needed, bool shadows)
         {
             // No need for this, destroy the existing one
-            if (!needed || !mesh || !material)
+            if (!needed || !mesh || material == null || material.Length == 0)
             {
                 if (current)
                     UnityEditor.EditorApplication.delayCall += () => DestroyImmediate(current);
@@ -67,7 +67,7 @@ namespace jCaballol94.SphereScene
 
             // Setup
             filter.sharedMesh = mesh;
-            renderer.sharedMaterial = material;
+            renderer.sharedMaterials = material;
             renderer.shadowCastingMode = shadows ? UnityEngine.Rendering.ShadowCastingMode.On : 
                 UnityEngine.Rendering.ShadowCastingMode.Off;
             renderer.receiveShadows = shadows;
