@@ -66,6 +66,15 @@ namespace jCaballol94.SphereScene
                 renderer = current.AddComponent<MeshRenderer>();
 
             // Setup
+            var materials = new Material[mesh.subMeshCount];
+            for (int i = 0; i < materials.Length; ++i)
+            {
+                if (i < material.Length)
+                    materials[i] = material[i];
+                else
+                    materials[i] = material[0];
+            }
+
             filter.sharedMesh = mesh;
             renderer.sharedMaterials = material;
             renderer.shadowCastingMode = shadows ? UnityEngine.Rendering.ShadowCastingMode.On : 
