@@ -30,6 +30,11 @@ namespace jCaballol94.SphereScene
             m_interiorObject = CreateObject(m_interiorObject, m_interiorMesh, m_interiorMaterial, 3, true, false);
             m_interiorInsideObject = CreateObject(m_interiorInsideObject, m_interiorMesh,
                 m_insideMaterial, 3, m_addInteriorInside, false);
+
+            if (m_outsideObject) m_outsideObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
+            if (m_insideObject) m_insideObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
+            if (m_interiorObject) m_interiorObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
+            if (m_interiorInsideObject) m_interiorInsideObject.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
         }
 
         private GameObject CreateObject(GameObject current, Mesh mesh, Material material, 
