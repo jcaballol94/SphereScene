@@ -48,7 +48,6 @@ namespace jCaballol94.SphereScene
             if (current == null)
             {
                 current = new GameObject();
-                current.hideFlags = HideFlags.HideInHierarchy | HideFlags.HideInInspector;
                 current.transform.SetParent(transform, false);
                 current.layer = layer;
             }
