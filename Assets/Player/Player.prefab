@@ -109,7 +109,6 @@ GameObject:
   - component: {fileID: 7699326406346960360}
   - component: {fileID: 4884071979901654666}
   - component: {fileID: 4818361899208000199}
-  - component: {fileID: 2096235605599444535}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -165,19 +164,6 @@ MonoBehaviour:
   m_stats: {fileID: 11400000, guid: 68bca51d2c5372b498799ef28e128f9c, type: 2}
   m_warpDistance: 10
   m_cameraRoot: {fileID: 0}
---- !u!114 &2096235605599444535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6223469742191390234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33d516aad2f1ca47b26a93dc8fad09c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_radius: 3
 --- !u!1 &7561017246609986499
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,6 +176,7 @@ GameObject:
   - component: {fileID: 4905648248051878429}
   - component: {fileID: 6930938598066329608}
   - component: {fileID: 6789522503882766891}
+  - component: {fileID: 3242967912063251619}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -310,6 +297,19 @@ MonoBehaviour:
   m_BigAmplitude: 0.25
   m_SmallFrequency: 5
   m_SmallAmplitude: 0.1
+--- !u!114 &3242967912063251619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561017246609986499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f33d516aad2f1ca47b26a93dc8fad09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_radius: 3
 --- !u!1 &8789436199373010550
 GameObject:
   m_ObjectHideFlags: 0
