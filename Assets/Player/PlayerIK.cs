@@ -26,7 +26,7 @@ namespace jCaballol94.SphereScene
             }
 
             m_animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, weight);
-            m_animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, weight);
+            m_animator.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
             m_animator.SetIKPosition(AvatarIKGoal.LeftHand, target.position);
             m_animator.SetIKRotation(AvatarIKGoal.LeftHand, target.rotation);
         }
