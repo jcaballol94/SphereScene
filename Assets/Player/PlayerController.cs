@@ -12,6 +12,9 @@ namespace jCaballol94.SphereScene
         [SerializeField] private Transform m_cameraRoot;
 
         private Rigidbody m_rigidbody;
+        private Animator m_animator;
+
+        private static readonly int MOVE_SPEED = Animator.StringToHash("MoveSpeed");
 
         private void OnEnable()
         {
@@ -28,6 +31,7 @@ namespace jCaballol94.SphereScene
         private void Start()
         {
             m_rigidbody = GetComponent<Rigidbody>();
+            m_animator = GetComponentInChildren<Animator>();
         }
 
         private void Update()
@@ -39,7 +43,9 @@ namespace jCaballol94.SphereScene
 
             var movement = m_cameraRoot.forward * vertical + m_cameraRoot.right * horizontal;
             movement = Vector3.ClampMagnitude(movement, 1f);
+            m_animator.SetFloat(MOVE_SPEED, movement.magnitude * m_stats.Speed);
             movement *= m_stats.Speed * Time.deltaTime;
+
 
             m_rigidbody.MovePosition(transform.position + movement);
             
