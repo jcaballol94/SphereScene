@@ -3602,6 +3602,10 @@ PrefabInstance:
       propertyPath: m_cameraRoot
       value: 
       objectReference: {fileID: 1033139945}
+    - target: {fileID: 4982001179473183204, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6223469742191390234, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
       propertyPath: m_Name
       value: Player
