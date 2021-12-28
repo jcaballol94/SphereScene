@@ -2550,11 +2550,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4169563014845469404, guid: d48e125bfff1b7f41a6fcebaa70c152d, type: 3}
   m_PrefabInstance: {fileID: 1706089499}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1711983108 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 719584647514301204, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
-  m_PrefabInstance: {fileID: 6353331695770857524}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1716553184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3603,10 +3598,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4344233961129075431, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
-      propertyPath: m_ConnectedBody
-      value: 
-      objectReference: {fileID: 1711983108}
     - target: {fileID: 4344233961129075431, guid: 4760afc4f67787b4bb1adca9c8d58c4f, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.000000054110945
