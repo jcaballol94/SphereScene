@@ -13,13 +13,16 @@ namespace jCaballol94.SphereScene
 
         private Rigidbody m_rigidbody;
         private Animator m_animator;
+        private Vector3 m_worldOffset = Vector3.zero;
 
         private static readonly int MOVE_SPEED = Animator.StringToHash("MoveSpeed");
+        private static readonly int WORLD_OFFSET = Shader.PropertyToID("_WorldOffset");
 
         private void OnEnable()
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            Shader.SetGlobalVector(WORLD_OFFSET, m_worldOffset);
         }
 
         private void OnDisable()
@@ -66,21 +69,26 @@ namespace jCaballol94.SphereScene
 
         private void Wrap()
         {
+            var offset = Vector3.zero;
+
             var position = transform.position;
 
             if (position.x > m_warpDistance)
-                position.x -= m_warpDistance * 2f;
+                offset.x -= m_warpDistance * 2f;
 
             if (position.x < -m_warpDistance)
-                position.x += m_warpDistance * 2f;
+                offset.x += m_warpDistance * 2f;
 
             if (position.z > m_warpDistance)
-                position.z -= m_warpDistance * 2f;
+                offset.z -= m_warpDistance * 2f;
 
             if (position.z < -m_warpDistance)
-                position.z += m_warpDistance * 2f;
+                offset.z += m_warpDistance * 2f;
 
-            transform.position = position;
+            transform.position += offset;
+            m_worldOffset -= offset;
+
+            Shader.SetGlobalVector(WORLD_OFFSET, m_worldOffset);
         }
     }
 }
