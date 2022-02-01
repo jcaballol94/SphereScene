@@ -1938,7 +1938,7 @@
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.GroupData",
     "m_ObjectId": "17bd94cc755a45428c32d8b578ebe855",
-    "m_Title": "WorldPos",
+    "m_Title": "WorldPos (hides the jump when we send the player to the other side of the world)",
     "m_Position": {
         "x": -4630.5,
         "y": -788.5
