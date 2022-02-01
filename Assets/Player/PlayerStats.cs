@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace jCaballol94.SphereScene
 {
+    public class InlineObjectAttribute : PropertyAttribute { }
+
     [CreateAssetMenu(fileName = "PlayerStats", menuName = "SphereScene/Player Stats")]
     public class PlayerStats : ScriptableObject
     {

@@ -7,7 +7,7 @@ namespace jCaballol94.SphereScene
     [RequireComponent(typeof(Rigidbody))]
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] private PlayerStats m_stats;
+        [SerializeField][InlineObject] private PlayerStats m_stats;
         [SerializeField] private float m_warpDistance;
         [SerializeField] private Transform m_cameraRoot;
 
