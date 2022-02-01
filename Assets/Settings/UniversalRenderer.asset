@@ -49,11 +49,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
-  m_Name: TerrainSurface
+  m_Name: Terrain
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    passTag: TerrainSurface
+    passTag: Terrain
     Event: 300
     filterSettings:
       RenderQueueType: 0
@@ -94,9 +94,9 @@ MonoBehaviour:
     debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
   m_RendererFeatures:
   - {fileID: 3520172284268782085}
-  - {fileID: -6290413068784235189}
   - {fileID: -4518307019692436214}
-  m_RendererFeatureMap: 052204b80a2ada304b0da458a4f6b3a80a151461b4bf4bc1
+  - {fileID: -6290413068784235189}
+  m_RendererFeatureMap: 052204b80a2ada300a151461b4bf4bc14b0da458a4f6b3a8
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
